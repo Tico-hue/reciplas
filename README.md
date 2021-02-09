@@ -2,7 +2,7 @@
 Reciplas is a high-fidelity prototype of a dashboard admin app made for a recycling company that wants to manage their employees, suppliers, raw materials, purchaces and sales.
 
 ## Features
-##### the most not implemented in this stage 
+##### not implented with backend yet  
 
 ###### User authentication
 ###### User CRUD 
@@ -10,7 +10,7 @@ Reciplas is a high-fidelity prototype of a dashboard admin app made for a recycl
 ###### Stock CRUD
 ###### Customer CRUD
 ###### Report Generator
-###### export tables as excel/pdf or print 
+###### Export tables as excel/pdf or print 
 
 ## Technologies used
 
@@ -28,3 +28,6 @@ Reciplas is a high-fidelity prototype of a dashboard admin app made for a recycl
 ![](screenshots/sellsReportPage.jpg? "Stock Page")
 
 
+## Instructions
+
+Clone this repository, open 'login.html' file and then you can navigate through it
