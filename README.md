@@ -27,6 +27,9 @@ Reciplas is a high-fidelity prototype of a dashboard admin app made for a recycl
 ##### sales report generator page
 ![](screenshots/sellsReportPage.jpg? "Stock Page")
 
+##### modal form to create new stock item
+![](screenshots/newStockItemForm.jpg? "newStockModal")
+
 
 ## Instructions
 
