@@ -1,0 +1,303 @@
+:root {
+  --verde-sidebar: #3b4642;
+  --verde-sidebar-submenu: #414f4a;
+  --verde-sidebar-hover: #1ba673;
+  --verde-sidebar-active: #16885e;
+  --texto-sidebar: #f2f2f2;
+  --azul-aceptar: #3a9dff;
+  --gris-modals: #828282;
+  --amarillo-editar: #f3ca3e;
+  --gris-tabla: #c3c3c3;
+  --verde-azulado: #23a58f;
+}
+
+/* ---------- Tablas ----------*/
+#tablaArticulos {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#tablaArticulos.thead {
+  height: 20px;
+}
+
+#tablaArticulos_wrapper {
+  margin-top: 50px;
+}
+
+tbody {
+  text-align: left;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #eef9f5;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+/* ------- Datatables -------*/
+div.dt-buttons.btn-group {
+  /*position: absolute !important;*/
+  float: right !important;
+}
+
+#tablaArticulos_filter {
+  text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  margin-top: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#tablaArticulos_filter label input {
+  width: 25rem;
+}
+
+#tablaArticulos_filter {
+  margin-bottom: 30px;
+}
+
+#tablaArticulos_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+.page-item.active .page-link {
+  border-color: #c3c3c3;
+}
+
+th {
+  font-weight: 500;
+}
+
+a.page-link {
+  color: var(--verde-azulado);
+}
+
+#tablaProductos_filter {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#tablaProductos_wrapper {
+  margin-top: 50px;
+}
+
+#tablaProductos_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+#tablaProductos_filter label input {
+  width: 25rem;
+}
+
+#tablaMateriaPrima_filter {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#tablaMateriaPrima_wrapper {
+  margin-top: 50px;
+}
+
+#tablaMateriaPrima_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+#tablaMateriaPrima_filter label input {
+  width: 25rem;
+}
+
+#tablaProveedores_filter {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#tablaProveedores_wrapper {
+  margin-top: 50px;
+}
+
+#tablaProveedores_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+#tablaProveedores_filter label input {
+  width: 25rem;
+}
+
+#tablaClientes_filter {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#tablaClientes_wrapper {
+  margin-top: 50px;
+}
+
+#tablaClientes_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+#tablaClientes_filter label input {
+  width: 25rem;
+}
+
+#tablaCategorias_filter {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#tablaCategorias_wrapper {
+  margin-top: 50px;
+}
+
+#tablaCategorias_paginate > ul > li.paginate_button.page-item.active > a {
+  background: #23a58f;
+}
+
+#tablaCategorias_filter label input {
+  width: 25rem;
+}
+
+/* ----------- Modales ----------*/
+
+#modalProducto > div > div > div > button > span {
+  color: #fff;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+#btnGuardar {
+  background: var(--verde-azulado);
+}
+
+.modal-header.button.span {
+  color: #fff;
+}
+
+#modalEliminarArticulo > div > div > div.modal-body.text-center > h5 {
+  color: #828282;
+}
+
+.close {
+  color: #fff;
+}
+
+#modalEliminarProveedor > div > div > div.modal-body.text-center > h5 {
+  color: #828282;
+}
+
+#container-pills {
+  margin-top: 2rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--azul-aceptar);
+}
+
+#modalEliminarCliente > div > div > div.modal-body.text-center > h5 {
+  color: #828282;
+}
+
+#modalEliminarCategoria > div > div > div.modal-body.text-center > h5 {
+  color: #828282;
+}
+/* ---------- Navs --------------*/
+
+a.nav-link {
+  color: #23a58f;
+}
+
+a.nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+a#btnNuevo.nav-link {
+  color: var(--azul-aceptar);
+}
+
+a#btnNuevoProveedor.nav-link {
+  color: var(--azul-aceptar);
+}
+
+a#btnNuevoCliente.nav-link {
+  color: var(--azul-aceptar);
+}
+
+a#btnNuevaCategoria.nav-link {
+  color: var(--azul-aceptar);
+}
+/* ----------- Forms ------------*/
+div.form-group.col-md-6 {
+  padding: 0 2rem;
+}
+
+div.form-row.col-md-12 {
+  padding: 0 2rem;
+}
+
+div.form-group.col-md-8 {
+  padding: 0 2rem;
+}
+
+div.form-group.col-md-4 {
+  padding: 0 2rem;
+}
+
+div.form-group.col-md-2 {
+  padding: 0 2rem;
+}
+
+div.form-group.col-md-4 {
+  padding-left: 2rem;
+}
+.container.container-fecha {
+  margin-left: 1rem;
+}
+
+.tiene-calendario .form-control {
+  padding-left: 2.375rem;
+}
+
+.tiene-calendario .form-control-calendar {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+#formReporteVentas {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+/* -------- Botones ---------*/
+
+.btnEditar {
+  background: var(--amarillo-editar);
+  color: #fff;
+}
+
+.btnEliminar:hover {
+  color: #000;
+}
+
+.button.close.cerrar-alerta {
+  color: #c3c3c3;
+}

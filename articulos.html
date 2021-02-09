@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reciplas</title>
+
+  <!-- Custom fonts for this template-->
+
+
+  <!-- Custom styles for this template-->
+ 
+  <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" />
+ <!-- Estilos de la tabla maia-->
+   <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" >
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="inicio.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src="logo1.png" style="width: 65%;">
+        </div>
+        <div class="sidebar-brand-text mx-3">Reciplas</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="inicio.html">
+          <i class="fas fa-home"></i>
+          <span>Inicio</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+    
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item" >
+        <a class="nav-link collapsed"  href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+          <i class="fas fa-box"></i>
+          <span>Inventario</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href='articulos.html' id="botonArticulos"> <strong>Articulos</strong></a>
+            <a class="collapse-item" href="categorias.html" id="botonCategorias"><strong>Categorias</strong></a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Compras -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-wallet"></i>
+          <span>Compras</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="proveedores.html"><strong>Proveedores</strong></a>
+            
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Ventas Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Ventas</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="clientes.html"><strong>Clientes</strong></a>
+            
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Reportes -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReportes" aria-expanded="true" aria-controls="collapseReportes">
+          <i class="fas fa-chart-bar"></i>
+          <span>Reportes</span>
+        </a>
+        <div id="collapseReportes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="formReporteDeVentas.html"><strong>Reporte de Ventas</strong></a>
+            <a class="collapse-item" href="formReporteDeCompras.html"><strong>Reporte de Compras</strong></a>
+            <a class="collapse-item" href="formReporteDeinventario.html"><strong>Reporte de inventario</strong></a>
+
+          </div>
+        </div>
+      </li>
+
+<!-- Nav Item - Produccion -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduccion" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-industry"></i>
+          <span>Produccion</span>
+        </a>
+        <div id="collapseProduccion" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="#"><strong>sub 1</strong></a>
+            <a class="collapse-item" href="#"><strong>sub 2</strong></a>
+            <a class="collapse-item" href="#"><strong>sub 3</strong></a>
+            </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Administracion -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-user-friends"></i>
+          <span>Administracion</span>
+        </a>
+        <div id="collapseAdmin" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="usuarios.html"><strong>Usuarios</strong></a>
+
+            
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Configuracion -->
+      <li class="nav-item">
+        <a class="nav-link" href="articulos.html">
+          <i class="fas fa-cogs"></i>
+          <span>Configuracion</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+          
+
+             <!-- Nav Item - Alerts -->
+             <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Notificaciones
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">1 de mayo, 2020</div>
+                    <span class="font-weight-bold">18 Pedidos se encuentran en estado pendiente!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">28 de abril, 2020</div>
+                   La cantidad de Pellets AZ se encuentra por debajo del minimo!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">27 de abril, 2020</div>
+                     Alerta: Usted tiene COVID-19.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las Notificaciones</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+           
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hernán Maona</span>
+                <img class="img-profile rounded-circle" src="foto.jpg">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-m  enu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+         <!-- aca empieza el contenido variable de pagina -->
+        <div id="contenido">
+          <header></header>
+
+    <!-- ====================ALERTAS========================= -->
+    <!-- Alerta Articulo Registrado-->
+    <div class="row">
+      <div class="container">
+        <div class="alert alert-success invisible collapse" id="alertaNuevoProducto" role="alert">
+          <h7 class="alert-text"></h7>
+          <button type="button" class="close cerrar-alerta-nuevo-articulo" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Alerta Articulo Registrado-->
+
+    <!-- Alerta Articulo Eliminado  -->
+    <div class="row">
+      <div class="container">
+        <div class="alert alert-success invisible collapse" id="alertaArticuloEliminado" role="alert">
+          <h7 class="alert-text"></h7>
+          <button type="button" class="close cerrar-alerta-eliminar-articulo" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Alerta Articulo Eliminado  -->
+    <!-- ====================FIN ALERTAS========================= -->
+
+    <!-- Nav Tabs-->
+    <div class="container-fluid">
+      <ul class="nav nav-tabs" role="tablist" id="miTab">
+        <li class="nav-item">
+          <a class="nav-link active" id="tab-todos" data-toggle="tab" href="#todos" role="tab" aria-controls="todos" aria-selected="true"
+            >Todos los Artículos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tab-productos" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="tab-materiaprima"
+            data-toggle="tab"
+            href="#materia-prima"
+            role="tab"
+            aria-controls="materia-prima"
+            aria-selected="false"
+            >Materia Prima</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="btnNuevo" href="#"> <i class="fas fa-plus"></i> Nuevo</a>
+        </li>
+      </ul>
+    </div>
+    <!--Fin Nav Tabs-->
+
+    <!--  =============================TABLAS=============================  -->
+    <div class="tab-content" id="contenidoMiTab">
+      <!--Tabla Artículos-->
+      <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="tab-todos">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table id="tablaArticulos" class="table table-striped table-bordered table-condensed table-sm" cellspacing="0">
+                  <thead class="text-center">
+                    <tr>
+                      <th>Opciones</th>
+                      <th>Código</th>
+                      <th>Nombre</th>
+                      <th>Descripción</th>
+                      <th>Tipo</th>
+                      <th>Categoría</th>
+                      <th>inventario</th>
+                      <th>Unidad de Medida</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000001</td>
+                      <td>Pellets AZ</td>
+                      <td>Pellets color azul</td>
+                      <td>Producto</td>
+                      <td>Pellets</td>
+                      <td>100</td>
+                      <td>kilogramo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000002</td>
+                      <td>Pellets R</td>
+                      <td>Pellets color rojo</td>
+                      <td>Producto</td>
+                      <td>Pellets</td>
+                      <td>250</td>
+                      <td>kilogramo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000003</td>
+                      <td>Pellets AM</td>
+                      <td>Pellets color amarillo</td>
+                      <td>Producto</td>
+                      <td>Pellets</td>
+                      <td>400</td>
+                      <td>kilogramo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000004</td>
+                      <td>Pellets N</td>
+                      <td>Pellets color negro</td>
+                      <td>Producto</td>
+                      <td>Pellets</td>
+                      <td>200</td>
+                      <td>kilogramo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000005</td>
+                      <td>Producto 1</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Muebles</td>
+                      <td>3</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000006</td>
+                      <td>Producto 2</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Muebles</td>
+                      <td>10</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000007</td>
+                      <td>Producto 3</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Envases</td>
+                      <td>600</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000008</td>
+                      <td>Plástico PET</td>
+                      <td>Plástico Reciclable</td>
+                      <td>Materia prima</td>
+                      <td>Reciclables</td>
+                      <td>180</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000009</td>
+                      <td>Producto 4</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Envases</td>
+                      <td>420</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000010</td>
+                      <td>Producto 5</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Envases</td>
+                      <td>300</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000011</td>
+                      <td>Producto 6</td>
+                      <td></td>
+                      <td>Producto</td>
+                      <td>Muebles</td>
+                      <td>9</td>
+                      <td>unidad</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000012</td>
+                      <td>Pellets BL</td>
+                      <td>Pellets color blanco</td>
+                      <td>Producto</td>
+                      <td>Pellets</td>
+                      <td>130</td>
+                      <td>kilogramo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditar btnEditarArticulo" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminar btnEliminarArticulo" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000013</td>
+                      <td>Plástico PVC</td>
+                      <td>Plástico reciclable PVC</td>
+                      <td>Materia prima</td>
+                      <td>Reciclables</td>
+                      <td>60</td>
+                      <td>kilogramo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin Tabla Artículos-->
+
+      <div class="tab-pane fade show" id="productos" role="tabpanel" aria-labelledby="tab-productos">
+        <!--Tabla Productos-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table id="tablaProductos" class="table table-striped table-bordered table-condensed table-sm" cellspacing="0">
+                  <thead class="text-center">
+                    <tr>
+                      <th>Opciones</th>
+                      <th>Código</th>
+                      <th>Nombre</th>
+                      <th>Descripción</th>
+                      <th>Categoría</th>
+                      <th>inventario</th>
+                      <th>Unidad de Medida</th>
+                      <th>Precio de Venta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000001</td>
+                      <td>Pellets AZ</td>
+                      <td>Pellets color azul</td>
+                      <td>Pellets</td>
+                      <td>100</td>
+                      <td>kilogramo</td>
+                      <td>$165.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000002</td>
+                      <td>Pellets R</td>
+                      <td>Pellets color rojo</td>
+                      <td>Pellets</td>
+                      <td>250</td>
+                      <td>kilogramo</td>
+                      <td>$165.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000003</td>
+                      <td>Pellets AM</td>
+                      <td>Pellets color amarillo</td>
+                      <td>Pellets</td>
+                      <td>400</td>
+                      <td>kilogramo</td>
+                      <td>$165.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000004</td>
+                      <td>Pellets N</td>
+                      <td>Pellets color negro</td>
+                      <td>Pellets</td>
+                      <td>200</td>
+                      <td>kilogramo</td>
+                      <td>$165.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000005</td>
+                      <td>Producto 1</td>
+                      <td></td>
+                      <td>Muebles</td>
+                      <td>3</td>
+                      <td>unidad</td>
+                      <td>$500.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000006</td>
+                      <td>Producto 2</td>
+                      <td></td>
+                      <td>Muebles</td>
+                      <td>10</td>
+                      <td>unidad</td>
+                      <td>$380.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000007</td>
+                      <td>Producto 3</td>
+                      <td></td>
+                      <td>Envases</td>
+                      <td>600</td>
+                      <td>unidad</td>
+                      <td>$5.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000009</td>
+                      <td>Producto 4</td>
+                      <td></td>
+                      <td>Envases</td>
+                      <td>420</td>
+                      <td>unidad</td>
+                      <td>$3.50</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000010</td>
+                      <td>Producto 5</td>
+                      <td></td>
+                      <td>Envases</td>
+                      <td>300</td>
+                      <td>unidad</td>
+                      <td>$8.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000011</td>
+                      <td>Producto 6</td>
+                      <td></td>
+                      <td>Muebles</td>
+                      <td>9</td>
+                      <td>unidad</td>
+                      <td>$800.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000012</td>
+                      <td>Pellets BL</td>
+                      <td>Pellets color blanco</td>
+                      <td>Pellets</td>
+                      <td>130</td>
+                      <td>kilogramo</td>
+                      <td>$165.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin Tabla Productos-->
+
+      <div class="tab-pane fade show" id="materia-prima" role="tabpanel" aria-labelledby="tab-materiaprima">
+        <!--Tabla Materia PRima-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table id="tablaMateriaPrima" class="table table-striped table-bordered table-condensed table-sm" cellspacing="0">
+                  <thead class="text-center">
+                    <tr>
+                      <th>Opciones</th>
+                      <th>Código</th>
+                      <th>Nombre</th>
+                      <th>Descripción</th>
+                      <th>Categoría</th>
+                      <th>inventario</th>
+                      <th>Unidad de Medida</th>
+                      <th>Precio de Compra</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000008</td>
+                      <td>Plástico PET</td>
+                      <td>Plástico Reciclable</td>
+                      <td>Reciclables</td>
+                      <td>180</td>
+                      <td>unidad</td>
+                      <td>$20.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="text-center">
+                          <div class="btn-group-sm">
+                            <button class="btn btn-warning btnEditarArticulo btnEditar" id="btnEditarArticulo" title="Editar">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btnEliminarArticulo btnEliminar" id="btnEliminarArticulo" title="Eliminar">
+                              <i class="fas fa-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td>000000013</td>
+                      <td>Plástico PVC</td>
+                      <td>Plástico reciclable PVC</td>
+                      <td>Reciclables</td>
+                      <td>60</td>
+                      <td>kilogramo</td>
+                      <td>$80.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin Tabla Materia Prima-->
+    </div>
+    <!--  =============================FIN TABLAS=============================  -->
+
+    <!--  =============================MODALES=============================  -->
+    <!--Modal Producto-->
+    <div class="modal fade" id="modalProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- Tabs Modal -->
+          <div class="container-fluid" id="container-pills">
+            <ul class="nav nav-pills" role="tablist" id="miTabModalProductos">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="tab-info-gral"
+                  data-toggle="tab"
+                  href="#info-gral"
+                  role="tab"
+                  aria-controls="info-gral"
+                  aria-selected="true"
+                  >Información General</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tab-materiales"
+                  data-toggle="tab"
+                  href="#materiales"
+                  role="tab"
+                  aria-controls="materiales"
+                  aria-selected="false"
+                  >Materiales</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Fin Tabs Modal -->
+
+          <!-- Contenido Tabs Modal -->
+          <div class="tab-content" id="contenidoMiTabModalProductos">
+            <div class="tab-pane fade show active" id="info-gral" role="tabpanel" aria-labelledby="tab-info-gral">
+              <!-- Form Productos-->
+              <form id="formProducto">
+                <div class="modal-body">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="nombre" class="col-form-label">Nombre: </label>
+                      <input type="text" class="form-control" id="nombre" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="tipoArticulo" class="col-form-label">Tipo de Artículo: </label>
+                      <br />
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="tipoArticulo" class="custom-control-input" value="1" checked required />
+                        <label class="custom-control-label" for="customRadioInline1">Producto</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="tipoArticulo" class="custom-control-input" value="0" />
+                        <label class="custom-control-label" for="customRadioInline2">Materia Prima</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="descripcion" class="col-form-label">Descripción: </label>
+                      <input type="text" class="form-control" id="descripcion" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="categoria" class="col-form-label">Categoría: </label>
+                      <select id="selectCategoria" class="form-control">
+                        <option selected></option>
+                        <option value="">Pellets</option>
+                        <option value="">Muebles</option>
+                        <option value="">Envases</option>
+                        <option value="">Textiles</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inventario" class="col-form-label">Cantidad en inventario: </label>
+                      <input type="number" class="form-control" id="inventario" />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inventario-minimo" class="col-form-label">inventario Mínimo: </label>
+                      <input type="number" class="form-control" id="inventario-minimo" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="unidadMedida" class="col-form-label">Unidad de Medida: </label>
+                      <select id="selectUnidadMedida" class="form-control">
+                        <option selected></option>
+                        <option value="">kilogramo</option>
+                        <option value="">unidades</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inventario" class="col-form-label">Precio de Venta: </label>
+                      <input type="number" min="0" step="any" class="form-control" id="inventario" placeholder="$0.00" />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="precio-costo" class="col-form-label">Precio de Costo: </label>
+                      <input
+                        type="number"
+                        min="0"
+                        step="any"
+                        class="form-control"
+                        id="precio-costo"
+                        placeholder="$0.00"
+                        readonly
+                        title="Costo total de materiales"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" id="btnGuardar" class="btn btn-success btnGuardarArticulo" data-dismiss="modal">
+                    Guardar
+                  </button>
+                </div>
+              </form>
+              <!-- Fin Form Producto-->
+            </div>
+            <div class="tab-pane fade show" id="materiales" role="tabpanel" aria-labelledby="tab-materiales">
+              <!-- Form Materiales -->
+              <form id="formMateriales">
+                <div class="modal-body">
+                  <div class="form-row">
+                    <div class="form-group col-md-8">
+                      <label for="material-1" class="col-form-label">Material 1: </label>
+                      <select id="selectMaterial1" class="form-control">
+                        <option selected></option>
+                        <option value="">Pellets AZ</option>
+                        <option value="">Pellets R</option>
+                        <option value="">Pellets BL</option>
+                        <option value="">Plástico PET</option>
+                        <option value="">Plástico PVC</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inventario" class="col-form-label">Cantidad: </label>
+                      <input type="number" min="0" step="any" class="form-control" id="inventario" placeholder="0" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-8">
+                      <label for="material-2" class="col-form-label">Material 2: </label>
+                      <select id="selectMaterial2" class="form-control">
+                        <option selected></option>
+                        <option value="">Pellets AZ</option>
+                        <option value="">Pellets R</option>
+                        <option value="">Pellets BL</option>
+                        <option value="">Plástico PET</option>
+                        <option value="">Plástico PVC</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inventario" class="col-form-label">Cantidad: </label>
+                      <input type="number" min="0" step="any" class="form-control" id="inventario" placeholder="0" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-8">
+                      <label for="material-3" class="col-form-label">Material 3: </label>
+                      <select id="selectMaterial3" class="form-control">
+                        <option selected></option>
+                        <option value="">Pellets AZ</option>
+                        <option value="">Pellets R</option>
+                        <option value="">Pellets BL</option>
+                        <option value="">Plástico PET</option>
+                        <option value="">Plástico PVC</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inventario" class="col-form-label">Cantidad: </label>
+                      <input type="number" min="0" step="any" class="form-control" id="inventario" placeholder="0" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-8">
+                      <label for="material-4" class="col-form-label">Material 4: </label>
+                      <select id="selectMaterial4" class="form-control">
+                        <option selected></option>
+                        <option value="">Pellets AZ</option>
+                        <option value="">Pellets R</option>
+                        <option value="">Pellets BL</option>
+                        <option value="">Plástico PET</option>
+                        <option value="">Plástico PVC</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inventario" class="col-form-label">Cantidad: </label>
+                      <input type="number" min="0" step="any" class="form-control" id="inventario" placeholder="0" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" id="btnGuardar" class="btn btn-success btnGuardarArticulo" data-dismiss="modal">
+                    Guardar
+                  </button>
+                </div>
+              </form>
+              <!-- Fin Form Materiales -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal Producto-->
+
+    <!-- Modal Materia Prima-->
+    <div class="modal fade" id="modalMateriaPrima" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Form Materia Prima-->
+          <form id="formMateriaPrima">
+            <div class="modal-body">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nombre" class="col-form-label">Nombre: </label>
+                  <input type="text" class="form-control" id="nombre" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="tipoArticulo" class="col-form-label">Tipo de Artículo: </label>
+                  <br />
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="tipoArticulo" class="custom-control-input" value="1" required />
+                    <label class="custom-control-label" for="customRadioInline1">Producto</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="tipoArticulo" class="custom-control-input" value="0" checked />
+                    <label class="custom-control-label" for="customRadioInline2">Materia Prima</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="descripcion" class="col-form-label">Descripción: </label>
+                  <input type="text" class="form-control" id="descripcion" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="categoria" class="col-form-label">Categoría: </label>
+                  <select id="selectCategoria" class="form-control">
+                    <option selected></option>
+                    <option value="">Reciclables</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inventario" class="col-form-label">Cantidad en inventario: </label>
+                  <input type="number" class="form-control" id="inventario" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inventario-minimo" class="col-form-label">inventario Mínimo: </label>
+                  <input type="number" class="form-control" id="inventario-minimo" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="unidadMedida" class="col-form-label">Unidad de Medida: </label>
+                  <select id="selectUnidadMedida" class="form-control">
+                    <option selected></option>
+                    <option value="">kilogramo</option>
+                    <option value="">unidades</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inventario" class="col-form-label">Precio de Costo: </label>
+                  <input type="number" min="0" step="any" class="form-control" id="precio-costo" placeholder="$0.00" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" id="btnGuardar" class="btn btn-success btnGuardarArticulo" data-dismiss="modal">
+                Guardar
+              </button>
+            </div>
+          </form>
+          <!-- Fin Form Materia Prima-->
+        </div>
+      </div>
+    </div>
+    <!--Fin Modal Materia Prima-->
+
+    <!--Modal Eliminar-->
+    <div class="modal fade" id="modalEliminarArticulo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eliminarModalLabel">Eliminar Artículo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <br />
+            <h5>¿Desea eliminar el artículo seleccionado?</h5>
+            <br />
+          </div>
+          <div class="modal-footer">
+            <button type="submit" id="btnGuardar" class="btn btn-success btnConfirmarEliminarArticulo" data-dismis="modal">
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+  <!-- End of Page Wrapper -->
+  <!--<script src='prueba.js'></script>-->
+    <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js">  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="datatables/datatables.min.js"></script>
+    <!-- para usar botones en datatables JS -->
+    <script src="datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+    <!-- custom JS-->
+    <script type="text/javascript" src="custom.js"></script>
+
+ 
+</body>
+</html>
